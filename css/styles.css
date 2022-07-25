@@ -1,0 +1,77 @@
+/* CSS for elements that share similar properties */
+
+.content {
+    background-color: #f2f2f2;
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto 20px auto;
+    border-left: 10px solid #28282B;
+}
+
+/* CSS for Navbar */
+
+
+nav {
+    background-color: #f2f2f2;
+    width: 90%;
+    max-width: 800px;
+    height: 40px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    justify-content: space-between; /* puts the responsive bars on right-most end and links on left-most end */
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none; /* removes underline from links in navbar */
+    padding: 11px 15px; /* 15px padding between nav links */
+    transition: 0.5s;
+    font-size: 1rem; /* fixes the font size */
+    color: #424242;
+}
+
+.active, nav a:hover {
+    background-color: #28282B;
+    color: white;
+}
+
+nav ul {
+    padding: 0px; /* removes 40px of padding that was present from left side of links */
+    font-size: 0px; /* removes the spacing between the inline list elements in the nav */
+    
+}
+
+#responsive-bars {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bar {
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    display: block;
+}
+
+/* CSS for main section */
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 500px) {
+    nav ul {
+        width: 0;
+        overflow: hidden;
+    }
+}
